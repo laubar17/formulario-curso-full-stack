@@ -8,25 +8,40 @@
 </head>
 <body>
 
-    <form action="" method="post">
+    <form action="" method="post" novalidate>
         <div>
             
             <h2>FORMULARIO DE INGRESO</h2>
 
-            <label for="nombre">Nombre:</label>
-            <input type="text" required id="nombre" pattern="[A-Za-z]+" title="Solo se permiten letras" minlength="3" name="nombre_usuario">
+            <label for="nombre">
+                <span>Nombre:</span>
+            </label>
+            <input type="text" required id="nombre" minlength="3" name="nombre_usuario">
+            <span class="error" aria-live="polite"></span>
         
-            <label for="apellido">Apellido:</label>
-            <input type="text" required id="apellido" pattern="[A-Za-z]+" title="Solo se permiten letras" minlength="3" name="apellido_user">
+            <label for="apellido">
+                <span>Apellido:</span>
+            </label>
+            <input type="text" required id="apellido" minlength="3" name="apellido_user">
+            <span class="error" aria-live="polite"></span>
        
-            <label for="mail">Email:</label>
+            <label for="mail">
+                <span>Email:</span>
+            </label>
             <input type="email" required id="mail" name="mail_user">
+            <span class="error" aria-live="polite"></span>
         
-            <label for="fecha">Fecha de Nacimiento:</label>
-            <input type="date" required id="fecha" name="fecha_user">
-        
-            <label for="pais">País de Residencia:</label>
-            <input type="text" required id="pais" pattern="[A-Za-z]+" title="Solo se permiten letras" minlength="3" name="pais_user">
+            <label for="fecha">
+                <span>Fecha de Nacimiento:</span>
+            </label>
+            <input type="date" required id="fecha" max="2026-12-31" name="fecha_user">
+             <span class="error" aria-live="polite"></span>
+
+            <label for="pais">
+                <span>País de Residencia:</span>
+            </label>
+            <input type="text" required id="pais" minlength="3" name="pais_user">
+            <span class="error" aria-live="polite"></span>
 
             <button type="submit">Enviar</button>
             <button type="button" id="alto_contraste">Cambiar Estilo</button>   
