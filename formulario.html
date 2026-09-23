@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <form action="" method="post">
+        <div>
+            
+            <h2>FORMULARIO DE INGRESO</h2>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" required id="nombre" pattern="[A-Za-z]+" title="Solo se permiten letras" minlength="3" name="nombre_usuario">
+        
+            <label for="apellido">Apellido:</label>
+            <input type="text" required id="apellido" pattern="[A-Za-z]+" title="Solo se permiten letras" minlength="3" name="apellido_user">
+       
+            <label for="mail">Email:</label>
+            <input type="email" required id="mail" name="mail_user">
+        
+            <label for="fecha">Fecha de Nacimiento:</label>
+            <input type="date" required id="fecha" name="fecha_user">
+        
+            <label for="pais">País de Residencia:</label>
+            <input type="text" required id="pais" pattern="[A-Za-z]+" title="Solo se permiten letras" minlength="3" name="pais_user">
+
+            <button type="submit">Enviar</button>
+            <button type="button" id="alto_contraste">Cambiar Estilo</button>   
+            
+        </div>
+
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

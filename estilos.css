@@ -1,0 +1,56 @@
+h2 {
+    margin-top: 10px;
+}
+
+form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; 
+}
+
+input:focus {
+  border-color: #0066cc;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 102, 204, 0.3);
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #004999;
+}
+
+.efecto-invertido{
+    filter: invert(); 
+}
+
